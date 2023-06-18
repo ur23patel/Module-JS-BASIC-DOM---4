@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Module (JAVASCRIPT BASIC & DOM) – 4</title>
+</head>
+<body>
+
+    <h1><center>Module (JAVASCRIPT BASIC & DOM) – 4</center> </h1>
+    <ol>
+            <hr class="hr">
+            <strong>
+                <li>What is JavaScript? </li>
+            </strong>
+            <p>Ans:- 
+                <ul>
+                <li>JavaScript, often abbreviated as JS, is a Client side Scritpting language that is one of the core technologies of the
+                 World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior,
+                  often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the
+                   code on users' devices.</li>
+                <li>JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.
+                     It has dynamic typing, prototype-based object-orientation, and first-class functions. </li> 
+                <li>JavaScript engines were originally used only in web browsers, but are now core components of some servers and a variety of applications.
+                     The most popular runtime system for this usage is Node.js.</li>  
+                </ul>     
+                </p>
+
+                <strong>
+                    <li>What is the use of is NaN function?  </li>
+                </strong>
+                <p>Ans:-
+                    <ul>
+                        <li>isNaN() is a function property of the global object.</li>
+                        <li> The isNaN() function determines whether a value is NaN when converted to a number.</li>
+                        <li> Because coercion inside the isNaN() function can be surprising, you may alternatively want to use
+                            Number.isNaN(). </li>
+                        <li> Return value :- "true" if the given value is NaN after being converted to a number; otherwise, "false".
+                        </li>
+                    </ul>
+                 </p>
+                <strong>
+                    <li>What is negative Infinity? </li>
+                </strong>
+                <p>Ans:-The negative infinity in JavaScript is a constant value that is used to represent a value that is the lowest available.
+                     This means that no other number is lesser than this value. It can be generated using a self-made function or 
+                     by an arithmetic operation.
+                
+                    <dl> Negative infinity is different from mathematical infinity in the following ways:</dl>
+                     </p>
+                  <ul>
+                    <li>Negative infinity results in -0(different from 0 ) when divided by any other number. </li>
+                    <li>When divided by itself or positive infinity, negative infinity return NaN</li>
+                    <li>Negative infinity, when divided by any positive number is negative infinity.</li>
+                    <li>Negative infinity, divided by any negative number is positive infinity.</li>
+                    <li>If we multiply negative infinity with NaN, we will get NaN as a result.</li>
+                    <li>The product of 0 and negative infinity is Nan.</li>
+                    <li>The product of two negative infinities is always a positive infinity.</li>
+                    <li>The product of both positive and negative infinity is always negative infinity.</li>
+                  </ul>   
+                <strong>
+                    <li>Which company developed JavaScript?</li>
+                </strong>
+                <p>Ans:- JavaScript was invented by Brendan Eich in 1995. It was developed for Netscape 2, and became the ECMA-262
+                     standard in 1997. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop 
+                     JavaScript for the Firefox browser.</p>
+                <strong>
+                        <li>What are undeclared and undefined variables?</li>
+                </strong>
+                <p>Ans:-
+                    <ul>
+                        <li>Undeclared variables are those that have not been declared or defined in the current scope</li>
+                        <li>while undefined variables are those that have been declared but not given a value</li>
+                        <li>Understanding the difference between these two terms is crucial for writing correct and effective
+                            JavaScript code.</li>
+                    </ul>
+                </p>
+                <strong>
+                    <li>Write the code for adding new elements dynamically? </li>
+                </strong>
+                 <p>Ans:-
+                    <ul>
+                        <li>Creation of new element: New elements can be created in JS by using the createElement() method.</li>
+                        <li>Setting the attributes of the created element: Attributes can be set using setAttribute() method.</li>
+                    </ul>
+                 </p>
+                <strong>
+                    <li>What is the difference between ViewState and SessionState?</li>
+                </strong>
+                <p>Ans:-
+                    <ul>
+                        <li>A ViewState is a state of a page within a browser wherein the values of controls persist when post back
+                             operation is done. When another page is loaded, the previous page data is no longer available.</li>
+                        <li>SessionState is the data of a user session and is maintained on the server side.</li>
+                    </ul>
+                </p>
+                <strong>
+                    <li>What is === operator?</li>
+                </strong>
+                <p>Ans:- 
+                    <ul>
+                    <li>The strict equality (===) operator checks whether its two operands are equal, returning a Boolean result.</li>
+                     <li>Unlike the equality operator, the strict equality operator always considers operands of different types to be
+                      different.</li>
+                    </ul>
+                </p>
+                <strong>
+                    <li>How can the style/class of an element be changed?</li>
+                </strong>
+                <p>Ans:-There are two common approaches.
+                    <ul>
+                       <li> Changing CSS with the help of the style property:</li>
+            
+                        <code>document.getElementById("id").style.property = new_style</code>
+            
+                    <li>This property is used to set the current class of the element to the specified class.</li>
+            
+                        <code> document.getElementById("id").className = class</code>
+                    </ul>
+                </p>
+                <strong>
+                    <li>How to read and write a file using JavaScript?</li>
+                </strong>
+                <p>Ans:- The fs.readFile() and rs.writeFile() methods are used to read and write of a file using javascript.
+                    <ol>
+                        <li>The file is read using the fs.readFile() function, which is an inbuilt method.
+                             This technique reads the full file into memory and stores it in a buffer. </li>
+                         <code>fs.readFile( file_name, encoding, callback_function)</code>   
+                         <li>The fs.writeFile() function is used to write data to a file in an asynchronous manner. 
+                            If the file already exists, it will be replaced.</li> 
+                            <code>fs.writeFile( file_name, data, options, callback )</code>
+                    </ol>
+                </p>
+                <strong>
+                    <li>What are all the looping structures in JavaScript? </li>
+                </strong>
+                <p>Ans:-
+                    <ul>
+                        <h4>JavaScript supports different kinds of loops:</h4>
+            
+                        <li> for - loops through a block of code a number of times </li>
+                        <li> for/in - loops through the properties of an object </li>
+                        <li> for/of - loops through the values of an iterable object </li>
+                        <li> while - loops through a block of code while a specified condition is true </li>
+                        <li> do/while - also loops through a block of code while a specified condition is true </li>
+                    </ul>
+                </p>
+                <strong>
+                    <li>How can you convert the string of any base to an integer in JavaScript? </li>
+                </strong>
+                <p>Ans:-
+                    <ul>
+                        <li>To convert a string to an integer parseInt(), Number(), and Unary operator(+) 
+                            function is used in javascript. </li>
+                        <li>parseInt() function returns Nan( not a number) when the string doesn't contain number.</li>
+                        <li>If a string with a number is sent, then only that number will be returned as the output.</li>
+                    </ul>
+                </p>
+                <strong>
+                    <li>What is the function of the delete operator?</li>
+                </strong>
+                <p>Ans:-
+                    <ul>
+                        <li>The delete operator removes a property from an object. </li>
+                        <li>If the property's value is an object and there are no more references to the object, the object held by
+                            that property is eventually released automatically.</li>
+                    </ul>
+                </p>
+                <strong>
+                    <li>What are all the types of Pop up boxes available in JavaScript?</li>
+                </strong>
+                <p>Ans:-
+                    <ul>
+                        <li>In Javascript, popup boxes are used to display the message or notification to the user.
+                             There are three types of pop-up boxes in JavaScript namely</li>
+                    <ol>
+                        <li><b>Alert Box:</b> It is used when a warning message is needed to be produced.When the
+                             alert box is displayed to the user, the user needs to press ok and proceed.</li>
+                            <code>alert("your Alert here")</code>
+
+                        <li><b>Prompt Box:</b> It is a type of pop up box which is used to get the user input for further
+                             use. After entering the required details user have to click ok to proceed next stage
+                              else by pressing the cancel button user returns the null value.</li>
+                            <code>prompt("your Prompt here")</code>
+
+                        <li><b>Confirm Box:</b> It is a type of pop-up box that is used to get authorization or
+                             permission from the user. The user has to press the ok or cancel button to proceed.</li>
+                            <code>confirm("your query here")</code>
+                    </ol>         
+                    </ul>
+                </p>
+                <strong>
+                    <li>What is the use of Void (0)?</li>
+                </strong>
+                <p>Ans:-
+                    <ul>
+                        <li>The void operator evaluates the given expression and then returns undefined.</li>
+                        <li>The void operator is often used merely to obtain the undefined primitive value, 
+                            usually using void(0) (which is equivalent to void 0).</li>
+                        <li>This is often used with hyperlinks.</li>
+                        <li>Using “javascript:void(0);” in anchor tag: Writing “javascript:void(0);” in anchor tag
+                             can prevent the page to reload and JavaScript functions can be called on single or
+                              double clicks easily.</li>
+                        <li><b>Syntax:</b>&lt; a href = "javascript:void(0);" &gt;</li>
+                    </ul>
+                </p>
+                <strong>
+                    <li>How can a page be forced to load another page in JavaScript? </li>
+                </strong>
+                <p>Ans:-
+                    <ul>
+                        <li>We can use window.location property inside the script tag to forcefully load another page in Javascript.</li>
+                        <li>It is a reference to a Location object that is it represents the current location of the document.
+                             We can change the URL of a window by accessing it.</li>
+                        <h4>Syntax:-</h4>
+                        <code>
+                            &lt;script&gt;
+                                window.location = &lt;Path / URL&gt;
+                            &lt;/script&gt;
+                        </code>
+                    </ul>
+                </p>
+                <strong>
+                    <li>What are the disadvantages of using innerHTML in JavaScript?</li>
+                </strong>
+                <p>Ans:-
+                    <h4>Disadvantages of innerHTML</h4>
+                    <ul>
+                        <li>Event handlers attached to any DOM element are preserved.</li>
+                        <li>Replacement is done everywhere.</li>
+                        <li>It is not possible to append innerHTML.</li>
+                        <li>Breaks the document.</li>
+                        <li>Used for Cross-site Scripting.</li>
+                    </ul>
+                </p>
+    </ol>
+</body>
+</html>
